@@ -119,12 +119,12 @@ if g_debug == "true":
 else:
     try:
         # Python 2.5
-        import xml.etree.cElementTree as etree
+        import xml.etree.ElementTree as etree
         print("PleXBMC -> Running with cElementTree on Python 2.5+")
     except ImportError:
         try:
             # normal cElementTree install
-            import cElementTree as etree
+            import ElementTree as etree
             print("PleXBMC -> Running with built-in cElementTree")
         except ImportError:
             try:
